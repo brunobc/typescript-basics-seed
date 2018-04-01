@@ -1,6 +1,9 @@
-console.log('Hello TypeScript!');
+let pizzaSize: string = 'small';
 
-const toppings = ['bacon', 'more bacon'];
-const newToppings = ['pepperoni with bacon'];
-const all = [...toppings, ...newToppings];
-console.log(all);
+function selectSize(size: 'small' | 'medium' | 'large'): void {
+    pizzaSize = size;
+}
+
+selectSize('large');
+
+console.log(`Pizza size: ${pizzaSize}`);
