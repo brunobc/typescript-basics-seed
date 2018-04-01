@@ -25,3 +25,16 @@ const selectSize: Callback = x => {
 };
 
 selectSize('medium');
+
+enum Sizes {
+    Small,
+    Medium,
+    Large
+}
+
+enum Sizes {
+    ExtraLarge = 3
+}
+
+console.log(Sizes.ExtraLarge, Sizes[Sizes.ExtraLarge]);
+console.log(Sizes.Large, Sizes[Sizes.Large]);
