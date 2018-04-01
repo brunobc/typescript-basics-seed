@@ -10,3 +10,7 @@ sumOrder = (x, y = 1) => x * y;
 const sum = sumOrder(30, 3);
 
 console.log(`Total sum: ${sum}`);
+
+let pizza: [string, number, boolean];
+
+pizza = ['Pepperoni', 20, true];
