@@ -5,7 +5,7 @@ let  sumOrder: (price: number, quantity: number) => number;
 // sumOrder = (price: number, quantity: number): number => {
 //     return price * quantity;
 // };
-sumOrder = (x, y) => x * y;
+sumOrder = (x, y = 1) => x * y;
 
 const sum = sumOrder(30, 3);
 
