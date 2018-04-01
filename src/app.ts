@@ -14,3 +14,14 @@ console.log(`Total sum: ${sum}`);
 let pizza: [string, number, boolean];
 
 pizza = ['Pepperoni', 20, true];
+
+
+type Size = 'small' | 'medium' | 'large';
+type Callback = (size: Size) => void;
+let pizzaSize: Size = 'small';
+
+const selectSize: Callback = x => {
+    pizzaSize = x;
+};
+
+selectSize('medium');
